@@ -1,0 +1,387 @@
+<html>
+
+<head>
+    <img src="images/DC LOGO.jpg" height="200" width="200" align="left">
+    <title>
+        DC COMICS
+    </title>
+    <style>
+        * {
+            box-sizing: border-box
+        }
+        
+        body {
+            font-family: Verdana, sans-serif;
+        }
+        
+        .mySlides {
+            display: none
+        }
+        
+        .slideshow-container {
+            max-width: 2000px;
+            position: relative;
+            margin: auto;
+        }
+        
+        .text {
+            color: #f2f2f2;
+            font-size: 30px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+        }
+        
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+        
+        .dot {
+            height: 13px;
+            width: 13px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+        
+        .active {
+            background-color: #717171;
+        }
+        
+        .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1.5s;
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+        
+        @-webkit-keyframes fade {
+            from {
+                opacity: .4
+            }
+            to {
+                opacity: 1
+            }
+        }
+        
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+            to {
+                opacity: 1
+            }
+        }
+        
+        @media only screen and (max-width: 300px) {
+            .text {
+                font-size: 11px
+            }
+        }
+        
+        input[type=text] {
+            width: 130px;
+            box-sizing: border-box;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+            background-color: white;
+            background-image: url('search.png');
+            background-position: 10px 10px;
+            background-repeat: no-repeat;
+            padding: 12px 20px 12px 40px;
+            -webkit-transition: width 0.4s ease-in-out;
+            transition: width 0.4s ease-in-out;
+        }
+        
+        input[type=text]:focus {
+            width: 100%;
+        }
+        
+        .class1 {
+            position: absolute;
+            top: 1080px;
+            right: 685px;
+            border: 3px solid #73AD21;
+        }
+        
+        .class2 {
+            position: absolute;
+            top: 1080px;
+            right: 270px;
+            border: 3px solid #73AD21;
+        }
+        
+        .class3 {
+            position: absolute;
+            top: 1280px;
+            right: 270px;
+            border: 3px solid #73AD21;
+        }
+        
+        .bgcolor {
+            background: linear-gradient(270deg, #5f2c82, #ee38bf, #ff5858, #49a09d, #1b5ece, #5f2c82, #ee38bf, #ff5858);
+            background-size: 400% 400%;
+            animation: AnimationName 30s ease infinite;
+        }
+        
+        @keyframes AnimationName {
+            0% {
+                background-position: 0% center;
+            }
+            100% {
+                background-position: 100% center;
+            }
+        }
+        
+        .block-title {
+            color: white;
+        }
+    </style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        .carousel-inner>.item>img,
+        .carousel-inner>.item>a>img {
+            width: 70%;
+            margin: auto;
+        }
+    </style>
+
+
+</head>
+<br>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styles.css">
+
+<!--<body background="">-->
+
+
+
+<nav>
+    <h3>
+        <ul>
+            <li><a href="http://www.dccomics.com/characters">CHARACTERS</a></li>
+            <li><a href="http://www.dccomics.com/comics">COMICS</a></li>
+            <li><a href="http://www.dccomics.com/movies">MOVIES</a></li>
+            <li><a href="http://www.dccomics.com/tv">TV</a></li>
+            <li><a href="http://www.dccomics.com/games">GAMES</a></li>
+            <li><a href="http://www.dccomics.com/collectibles">COLLECTIBLES</a></li>
+            <li><a href="http://www.dccomics.com/videos">VIDEOS</a></li>
+
+            <form>
+                <img src="images/search.png" height="50" width="50">
+                <input type="text" name="search" placeholder="Search..">
+            </form>
+
+        </ul>
+</nav>
+
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+        <div class="numbertext">1 / 5</div>
+        <img src="images/dcslider1.jpg" style="width:100%">
+        <div class="text">Unforbidden Love</div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">2 / 5</div>
+        <img src="images/dcslider2.jpg" style="width:100%">
+        <div class="text">Katana returns</div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">3 / 5</div>
+        <img src="images/dcslider3.jpg" style="width:100%">
+        <div class="text">Superman VS A.I.</div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">4 / 5</div>
+        <img src="images/dcslider4.jpg" style="width:100%">
+        <div class="text">Batman and his son</div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">5 / 5</div>
+        <img src="images/dcslider5.jpg" style="width:100%">
+        <div class="text">LEGO Movie</div>
+    </div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+</div>
+
+<script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+            slideIndex = 1
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        setTimeout(showSlides, 2000);
+    }
+</script>
+
+
+<div style="background-color : #B2DFDB;">
+    <h1>
+        <center>
+            <font face="Impact" size="500" font color="#0282f9">FEATURED</center>
+        </font>
+    </h1>
+    <img class="class2" src="images/brainiac.jpg" width="401.875" height="192.950" float=right>
+    <img class="class1" src="images/godspeed.jpg" width="828.125" height="391.200" float=left>
+    <img class="class3" src="images/black racer.jpg" width="401.875" height="192.950" float=right>
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<div class="container">
+    <br>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+        </ol>
+
+        <div class="carousel-inner" role="listbox">
+
+            <div class="item active">
+                <img src="images/Chania.JPG" alt="Chania" width="460" height="345">
+                <div class="carousel-caption">
+                    <h3>Titans VS Justice league</h3>
+                    <p>1 night crossover of titans and justice league</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="images/Chania2.jpg" alt="Chania" width="460" height="345">
+                <div class="carousel-caption">
+                    <h3>Lobo</h3>
+                    <p>Galactic Vigilanty</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="images/Flower.jpg" alt="Flower" width="460" height="345">
+                <div class="carousel-caption">
+                    <h3>Gotham</h3>
+                    <p>Gothamn under the cape of it's saviour,Batman</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="images/Flower2.jpg" alt="Flower" width="460" height="345">
+                <div class="carousel-caption">
+                    <h3>Darkseid</h3>
+                    <p>He's not dead, he's coming to take revenge</p>
+                </div>
+            </div>
+
+        </div>
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>
+<br>
+
+<img src="images/league up.jpg" width="950" height="500" float=left>
+<img src="images/superman.jpg" width="320" height="500" float=right>
+<br><br>
+<img src="images/flash1.PNG" width="394" height="600" float=left>
+<img src="images/deathstroke1.png" width="908" height="600" float=right>
+
+<hr>
+<nobr>
+    <div class="bgcolor">
+        <h1>
+            <center>
+                <font face="Impact" size="500" font color="#0282f9">WHO'S WHO
+                </font>
+            </center>
+
+        </h1>
+        <a href="file:///C:/Users/sparash%20sharma/Desktop/htmls/marvel/superman/superman.html"><img src="images/superman1.png" width="210" height="377"></a>
+        <a href="file:///C:/Users/sparash%20sharma/Desktop/htmls/marvel/Batman/Batman%20portfolio.html"><img src="images/batman.png" width="210" height="377"></a>
+        <a href="file:///C:/Users/sparash%20sharma/Desktop/htmls/marvel/wonder%20woman/wonderwoman%20portfolio.html"><img src="images/wonderwoman.jpg" width="220" height="377"></a>
+        <a href="file:///C:/Users/sparash%20sharma/Desktop/htmls/marvel/the%20flash/the%20flash%20profile.html"><img src="images/the flash.jpg" width="210" height="377"></a>
+        <a href="file:///C:/Users/sparash%20sharma/Desktop/htmls/marvel/Aquaman/aquaman%20profile.html"><img src="images/green lantern.jpg" width="210" height="377"></a>
+        <a href="file:///C:/Users/sparash%20sharma/Desktop/htmls/marvel/green%20lantern/green%20lantern.html"><img src="images/aquaman.jpg" width="210" height="377"></a>
+        <a href="file:///C:/Users/sparash%20sharma/Desktop/htmls/marvel/cyborg/cyborg%20profile.html"><img src="images/cyborg.jpg" width="210" height="377"></a>
+
+
+        <br>
+</nobr>
+<footer id="footer">
+    <div class="region region-footer">
+
+        <section class="block block-menu social-media-buttons-comics block-odd clearfix" id="block-menu-menu-social-media-buttons-dc-c" class="block block-menu social-media-buttons-comics block-odd block-menu-social-media-buttons---dc-c block-menu-menu-social-media-buttons-dc-c">
+            <div class="block-inner">
+                <h2 class="block-title" style="font-color:FFF9C4;">Follow us</h2>
+                <div class="content clearfix" class="content clearfix">
+                    <ul class="menu">
+                        <li class="first leaf menu-2239736 facebook mid-2239736">
+                            <a href="https://www.facebook.com/dccomics"><img src="images/Facebook.png" height="50" width="50"></a>
+                        </li>
+                        <li class="leaf menu-2239726 twitter mid-2239726">
+                            <a href="/twitter-directory"><img src="images/Twitter.png" height="50" width="50"></a>
+                        </li>
+                        <li class="leaf menu-2239741 pinterest mid-2239741">
+                            <a href="http://www.pinterest.com/dccomics/"><img src="images/Pinterest.png" height="50" width="50"></a>
+                        </li>
+                        <li class="last leaf menu-2239721 periscope mid-2239721">
+                            <a href="https://www.periscope.tv/DCComics"><img src="images/Periscope.png" height="50" width="50"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+    </div>
+</footer>
+
+</html>
+</div>
+
+
+</script>
+</body>
+
+</html>
